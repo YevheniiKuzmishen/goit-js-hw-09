@@ -27,3 +27,10 @@ document.querySelector(".feedback-form").addEventListener("submit", (event) => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector('input[name="email"]').value = formData.email;
+  document.querySelector('textarea[name="message"]').value = formData.message;
+});
+
+
+
